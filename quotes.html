@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Comedy Quote Generator</title>
+<link href="quotes.css" rel='stylesheet' type='text/css'>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="quotes.js"></script>
+</head>
+<body>
+
+<div id ="wrapper">
+	<header>
+		<h1>Comedy Quote Generator</h1>
+	</header>
+
+	<section>
+		<div id="picbox"><img src="http://i88.photobucket.com/albums/k199/flanners_bucket/Codepen/mask.jpg" alt = "Mask"></div>
+        <h2>Please select an actor.</h2>
+	    
+		
+		<form>
+			<input type="radio" name="author" value="Woody Allen" checked> Woody Allen 
+			<br>
+			<input type="radio" name="author" value="W. C. Fields"> W.C. Fields 
+			<br>
+			<input type="radio" name="author" value="Groucho Marx"> Groucho Marx 
+		</form> 
+			
+		
+		<div id="generate">
+			<p>Please press the button to generate a random quote.</p>
+			<button onclick="generate()">Get a quote.</button>
+		</div>
+				
+		<div id="quote_box">
+			
+		</div>
+		
+		<div id="tweet">
+			<p>Share this quote on Twitter</p>
+			<button onclick="tweeter()">Tweet it!</button>
+		</div>
+
+	</section>
+</div>
+
+</body>
+</html>
