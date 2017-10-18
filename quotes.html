@@ -5,41 +5,46 @@
 <title>Comedy Quote Generator</title>
 <link href="quotes.css" rel='stylesheet' type='text/css'>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="https://gitcdn.link/repo/freeCodeCamp/testable-projects-fcc/master/build/bundle.js"></script>
 <script src="quotes.js"></script>
 </head>
 <body>
 
-<div id ="wrapper">
+<div id ="quote-box">
 	<header>
 		<h1>Comedy Quote Generator</h1>
 	</header>
 
 	<section>
-		<div id="picbox"><img src="http://i88.photobucket.com/albums/k199/flanners_bucket/Codepen/mask.jpg" alt = "Mask"></div>
+		<div id="picbox"><img src="https://res.cloudinary.com/doniq1sle/image/upload/v1508316519/mask_rhgggg.jpg" alt = "Mask"></div>
         <h2>Please select an actor.</h2>
-	    
-		
+
+
 		<form>
-			<input type="radio" name="author" value="Woody Allen" checked> Woody Allen 
+			<input type="radio" name="author" value="Woody Allen" checked> Woody Allen
 			<br>
-			<input type="radio" name="author" value="W. C. Fields"> W.C. Fields 
+			<input type="radio" name="author" value="W. C. Fields"> W.C. Fields
 			<br>
-			<input type="radio" name="author" value="Groucho Marx"> Groucho Marx 
-		</form> 
-			
-		
+			<input type="radio" name="author" value="Groucho Marx"> Groucho Marx
+		</form>
+
+
 		<div id="generate">
 			<p>Please press the button to generate a random quote.</p>
-			<button onclick="generate()">Get a quote.</button>
+			<a href="#" id="new-quote" onclick="generate()">Get a quote.</a>
 		</div>
-				
-		<div id="quote_box">
-			
+
+		<div id="text">
+
+		</div>
+
+		<div id="author">
+
 		</div>
 		
-		<div id="tweet">
+		<div id="tweeter">
 			<p>Share this quote on Twitter</p>
-			<button onclick="tweeter()">Tweet it!</button>
+			<a href="twitter.com/intent/tweet" id="tweet-quote" onclick="tweeter()">Tweet it!</a>
 		</div>
 
 	</section>

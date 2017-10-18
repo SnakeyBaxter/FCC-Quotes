@@ -11,7 +11,7 @@ p {
 	font-size: 20px;
 }
 
-#wrapper {
+#quote-box {
 	margin: auto;
 	max-width: 900px;
 }
@@ -41,7 +41,7 @@ section {
 	border-radius: 25px;
 }
 
-#quote_box {
+#text, #author{
     padding: 10px;
     height: 150px;
     background-color: #e3e3e3;
@@ -51,7 +51,9 @@ section {
 	margin: 20px auto;
 }
 
-#generate, #tweet {
+
+
+#generate, #tweeter, #new-quote {
 	text-align: center;
 	clear: both;
 }
@@ -61,14 +63,11 @@ section {
 	font-size: 25px;
 }
 
-button {
+#tweeter, #new-quote {
 	color: #0099FF;
 	width: 125px;
 	height: 50px;
 	font-size: 15px;
 	font-weight: bold;
+	background: #7fcad0;
 }
-
-
-
-
